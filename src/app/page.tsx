@@ -1,25 +1,21 @@
-import AboutSection from "@/components/AboutSection";
-import ContactSection from "@/components/ContactSection";
-import Footer from "@/components/Footer";
-import Header from "@/components/Header";
-import HeroSection from "@/components/HeroSection";
-import ReviewsSection from "@/components/ReviewsSection";
-import ServicesSection from "@/components/ServicesSection";
-import TrustSection from "@/components/TrustSection";
+"use client";
 
-export default function HomePage() {
+import AboutSection from "@/features/about";
+import ContactSection from "@/features/contact";
+import HeroSection from "@/features/home";
+import ReviewsSection from "@/features/reviews";
+import ServicesSection from "@/features/services";
+import TrustSection from "@/features/trust";
+
+export default function Page() {
   return (
     <>
-      <Header />
-      <main>
-        <HeroSection />
-        <TrustSection />
-        <ServicesSection />
-        <AboutSection />
-        <ReviewsSection />
-        <ContactSection />
-      </main>
-      <Footer />
+      <HeroSection />
+      <TrustSection />
+      <ServicesSection />
+      <AboutSection />
+      <ReviewsSection />
+      <ContactSection />
     </>
   );
 }

@@ -1,8 +1,7 @@
 import type { Metadata } from "next";
-import { AppRouterCacheProvider } from "@mui/material-nextjs/v15-appRouter";
 import { Inter } from "next/font/google";
 import "./globals.css";
-import Providers from "./providers";
+import App from "./App";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -23,9 +22,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${inter.variable} bg-slate-50 text-slate-950`}>
-        <AppRouterCacheProvider options={{ enableCssLayer: true }}>
-          <Providers>{children}</Providers>
-        </AppRouterCacheProvider>
+        <App>{children}</App>
       </body>
     </html>
   );
