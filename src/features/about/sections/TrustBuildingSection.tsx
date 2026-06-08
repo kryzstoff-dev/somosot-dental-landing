@@ -12,7 +12,7 @@ function TrustBuildingSection() {
     return (
         <Paper
           elevation={0}
-          className="rounded-4xl border border-white/10! bg-white/10 p-6 text-white backdrop-blur"
+          className="rounded-4xl border border-white/10! bg-white/10! p-6 text-white backdrop-blur"
         >
           <p className="text-sm font-bold uppercase tracking-[0.25em] text-cyan-400">
             Trust-building details
@@ -22,9 +22,9 @@ function TrustBuildingSection() {
             {improvements.map((item) => (
               <div
                 key={item}
-                className="rounded-2xl border border-white/10 bg-white/10 p-4"
+                className="rounded-2xl border border-white/10 bg-white/10! p-4"
               >
-                <p className="text-sm leading-6 text-slate-600!">{item}</p>
+                <p className="text-sm leading-6 text-slate-400!">{item}</p>
               </div>
             ))}
           </div>
